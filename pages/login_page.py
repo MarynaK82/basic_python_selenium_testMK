@@ -1,4 +1,9 @@
-class LoginPage:
+from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.support.wait import WebDriverWait
+
+from pages.base_page import BasePage
+
+class LoginPage():
 
     def __init__(self, driver):
         self.driver = driver
@@ -15,5 +20,5 @@ class LoginPage:
         self.driver.find_element_by_xpath("//button[@type='submit']").click()
 
 
-# print("qqq")
+
 
